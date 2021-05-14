@@ -1,25 +1,32 @@
-const about = document.querySelector('#about');
-const aboutContent = document.querySelector('#about-content');
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("../service-worker.js");
+}
 
-const contact = document.querySelector('#contact');
-const contactContent = document.querySelector('#contact-content');
+console.log("File is sucessfully minified");
 
-about.addEventListener('click' ,() => {
+const about = document.querySelector("#about");
+const aboutContent = document.querySelector("#about-content");
+
+const contact = document.querySelector("#contact");
+const contactContent = document.querySelector("#contact-content");
+
+about.addEventListener("click", () => {
   const aboutBox = new WinBox({
     title: "About Me",
-    width: '300px',
-    height: '300px',
+    width: "300px",
+    height: "300px",
     mount: aboutContent,
-    onfocus: function() {
+    onfocus: function () {
       this.setBackground("#23D84E");
     },
-    onblur: function() {
+    onblur: function () {
       this.setBackground("#777");
-    }
+    },
   });
-})
+});
 
-contact.addEventListener('click' ,() => {
+contact.addEventListener("click", () => {
   const contactBox = new WinBox({
     title: "Contact Me",
     width: "300px",
@@ -32,4 +39,4 @@ contact.addEventListener('click' ,() => {
       this.setBackground("#777");
     },
   });
-})
+});
