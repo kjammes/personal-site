@@ -8,7 +8,7 @@ about.addEventListener('click' ,() => {
   const aboutBox = new WinBox({
     title: "About Me",
     width: '300px',
-    height: '500px',
+    height: '300px',
     mount: aboutContent,
     onfocus: function() {
       this.setBackground("#23D84E");
@@ -23,7 +23,7 @@ contact.addEventListener('click' ,() => {
   const contactBox = new WinBox({
     title: "Contact Me",
     width: "300px",
-    height: "500px",
+    height: "300px",
     mount: contactContent,
     onfocus: function () {
       this.setBackground("#23D84E");
