@@ -7,12 +7,8 @@ const contactContent = document.querySelector('#contact-content');
 about.addEventListener('click' ,() => {
   const aboutBox = new WinBox({
     title: "About Me",
-    width: '400px',
-    height: '400px',
-    top: 50,
-    right: 50,
-    bottom: 50,
-    left: 50,
+    width: '300px',
+    height: '500px',
     mount: aboutContent,
     onfocus: function() {
       this.setBackground("#23D84E");
@@ -26,12 +22,8 @@ about.addEventListener('click' ,() => {
 contact.addEventListener('click' ,() => {
   const contactBox = new WinBox({
     title: "Contact Me",
-    width: "400px",
-    height: "400px",
-    top: 150,
-    right: 50,
-    bottom: 50,
-    left: 250,
+    width: "300px",
+    height: "500px",
     mount: contactContent,
     onfocus: function () {
       this.setBackground("#23D84E");
